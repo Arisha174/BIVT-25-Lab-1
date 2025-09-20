@@ -2,13 +2,14 @@
 {
     public class White
     {
+
         public bool Task1(double d)
         {
             bool answer = false;
 
             // code here
-            answer = d > 0;
-            Console.WriteLine(d);
+            if (d > 0);
+                answer = true;
             // end
 
             return answer;
@@ -18,37 +19,43 @@
             bool answer = false;
 
             // code here
-
+            if (n % 2 == 0);
+                answer = true;
             // end
 
             return answer;
         }
         public int Task3(int a, int b)
         {
-            int answer = 0;
+            int answer = a;
 
             // code here
-
+            if (b > a)
+            {
+                answer = b;
+            }
             // end
 
             return answer;
         }
         public double Task4(double d, double f)
         {
-            double answer = 0;
+            double answer = d;
 
             // code here
-
+            if (Math.Abs(d) > Math.Abs(f)) ;
+                answer = f;
             // end
 
             return answer;
         }
         public double Task5(double x)
         {
-            double answer = 0;
+            double answer = 1;
 
             // code here
-
+            if (Math.Abs(x) <= 1) 
+            answer = x;
             // end
 
             return answer;
@@ -58,7 +65,8 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -6)) ;
+                answer = true ;
             // end
 
             return answer;
@@ -69,7 +77,8 @@
             bool answer = false;
 
             // code here
-
+            int s = n * n;
+            answer = (((s - n) > (2 * n)) && (n % 2 == 0));
             // end
 
             return answer;
@@ -79,7 +88,7 @@
             bool answer = false;
 
             // code here
-
+            answer = (L * 3 < 30 && (M % 2 == 0) && (M > 5 || T > 5));
             // end
 
             return answer;
