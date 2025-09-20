@@ -6,47 +6,39 @@
         public bool Task1(double d)
         {
             bool answer = false;
-
             // code here
-            if (d > 0);
+            if (d > 0)
                 answer = true;
             // end
-
             return answer;
         }
         public bool Task2(int n)
         {
             bool answer = false;
-
             // code here
-            if (n % 2 == 0);
+            if (n % 2 == 0)
                 answer = true;
             // end
-
             return answer;
         }
         public int Task3(int a, int b)
         {
             int answer = a;
-
             // code here
             if (b > a)
             {
                 answer = b;
             }
             // end
-
             return answer;
         }
         public double Task4(double d, double f)
         {
             double answer = d;
-
             // code here
-            if (Math.Abs(d) > Math.Abs(f)) ;
+            if (Math.Abs(d) > Math.Abs(f))
                 answer = f;
             // end
-
             return answer;
         }
         public double Task5(double x)
@@ -63,12 +55,10 @@
         public bool Task6(double x, double y, double r)
         {
             bool answer = false;
-
             // code here
-            if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -6)) ;
+            if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -6))
                 answer = true ;
             // end
-
             return answer;
         }
 
@@ -86,11 +76,9 @@
         public bool Task8(double L, int T, int M)
         {
             bool answer = false;
-
             // code here
             answer = (L * 3 < 30 && (M % 2 == 0) && (M > 5 || T > 5));
             // end
-
             return answer;
         }
     }
