@@ -56,8 +56,8 @@
         {
             bool answer = false;
             // code here
-            if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -6))
-                answer = true ;
+            if (Math.Abs(x * x + y * y - r * r) <= 0.0001)
+                answer = true;
             // end
             return answer;
         }
@@ -77,7 +77,11 @@
         {
             bool answer = false;
             // code here
-            answer = (L * 3 < 30 && (M % 2 == 0) && (M > 5 || T > 5));
+            //answer = (L <= 30 && (M % 2 == 0) && (M >= 5 || T >= 5));
+            if (L <= 30 && M + T >= 5 && M % 2 == 0)
+            {
+                answer = true;
+            }
             // end
             return answer;
         }

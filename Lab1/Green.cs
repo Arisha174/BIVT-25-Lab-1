@@ -84,14 +84,17 @@
             bool answer = false;
 
             // code here
-            int wake_up = 14 * 60;
-            int fall_asleep = 4 * 60;
-            int tea = (X + 1) / 2;
-            int minutes_tea = Y * tea;
-            int new_fall_asleep = fall_asleep - minutes_tea;
-            int new_wake_up = wake_up - X * 60;
-            if ((7*60 <= (new_wake_up - new_fall_asleep)) && ((new_wake_up - new_fall_asleep) <= 9*60) && (new_wake_up == 7*60) )
-                answer = true;
+            int day = X;
+            if (X % 2 != 0)
+            {
+                day = (X / 2) + 1;
+            }
+            else
+            {
+                day = X / 2;
+            }
+            int up = day * Y;
+            if ((up >= 240) && (up <= 360) && X >= 7) { answer = true; }
             // end
 
             return answer;
